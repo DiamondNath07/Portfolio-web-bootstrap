@@ -10,9 +10,66 @@
     />
     <link
       rel="stylesheet"
+      href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
       href="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
     />
+
     <title>Portfolio</title>
   </head>
-  <body></body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: 0;
+    }
+  </style>
+  <body>
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light ps-5 fw-bold" href="#">DKG</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon bg-light text-light"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse text-light justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav me-5">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-light fw-bold"
+                aria-current="page"
+                href="#"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fw-bold" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fw-bold" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fw-bold" href="#"
+                ><i class="bi bi-envelope text-light fw-bold d-block"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </body>
 </html>
