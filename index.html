@@ -10,9 +10,429 @@
     />
     <link
       rel="stylesheet"
+      href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
       href="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
     />
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
     <title>Portfolio</title>
   </head>
-  <body></body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: 0;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+    .card {
+      transition: all 0.3s ease-in;
+    }
+    .card:hover {
+      transform: scale(1.1);
+    }
+
+    .card-img-overlay {
+      top: 17%;
+    }
+    .card-img-overlay {
+      position: absolute;
+      z-index: 1;
+    }
+    .buttonc {
+      position: absolute;
+      display: none;
+      z-index: 2;
+      transition: transform 1s ease-in;
+    }
+    .card:hover .buttonc {
+      display: block;
+    }
+
+    .card-img-overlay .f-btn {
+      margin-top: 85%;
+    }
+  </style>
+  <body>
+    <!-- navbar -->
+
+    <section>
+      <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light ps-5 fw-bold" href="#">DKG</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon bg-light text-light"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse text-light justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav me-5">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-light fw-bold"
+                  aria-current="page"
+                  href="#Project"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light fw-bold" href="#About">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light fw-bold" href="#Contact"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light fw-bold" href="#"
+                  ><i class="bi bi-envelope text-light fw-bold d-block"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- headline -->
+      <section class="intro">
+        <div class="container-fluid bg-dark">
+          <div class="row">
+            <div class="col-1 d-none d-md-block pt-5">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    ><i class="bi bi-github text-light"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><i class="bi bi-linkedin text-light"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><i class="bi bi-facebook text-light"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><i class="bi bi-twitter text-light"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><i class="bi bi-whatsapp text-light"></i>
+                  </a>
+                </li>
+              </ul>
+              <!-- intro-text -->
+            </div>
+            <div class="col-6 pt-5">
+              <h1 class="display-5 fw-bold text-warning">
+                Hey There. <br />
+                We are DKG
+              </h1>
+              <p class="display-6 text-light">We are Software Developers</p>
+              <p class="lead text-light">
+                We can help you build a product , feature or website Look
+                through some of my work and experience! If you like what you see
+                and have a project you need coded, don’t hestiate to contact us.
+              </p>
+            </div>
+            <div class="col-5">
+              <img class="img-fluid" src="./d-images/bg-img1.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- project -->
+      <section id="Project" class="pt-5">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-sm-4 pt-5">
+              <h2 class="fw-bold text-end text-dark">My Recent Work</h2>
+            </div>
+            <div class="col-sm-8 pt-5">
+              <div class="pt-1 bg-secondary mt-3 text-dark"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 pt-5 me-5">
+              <img src="./d-images/frame2.png" alt="frame png" width="100%" />
+            </div>
+            <div class="col-sm-5 pt-5 justify-content-start">
+              <h1 class="fw-bold">Multi-Post Stories</h1>
+              <p class="lead">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a
+                standard dummy text.
+              </p>
+
+              <div>
+                <button class="btn rounded-0 btn-outline-secondary border">
+                  css
+                </button>
+                <button class="btn rounded-0 btn-outline-secondary border">
+                  html
+                </button>
+                <button class="btn rounded-0 btn-outline-secondary border">
+                  bootstrap
+                </button>
+                <button class="btn rounded-0 btn-outline-secondary border">
+                  Ruby
+                </button>
+              </div>
+              <br />
+              <a href="#">
+                <button class="btn rounded-0 btn-warning btn-lg">
+                  See Project
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- cards -->
+      <section id="Project">
+        <div class="container mt-5">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card rounded-0 border-0">
+                <img src="./d-images/kard1.png" class="card-img" alt="..." />
+                <div class="card-img-overlay p-0">
+                  <h5 class="card-title d-none">Card title</h5>
+                  <p class="card-text d-none">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                  <div class="f-btn">
+                    <a href="#"
+                      ><button
+                        class="buttonc card-btn btn btn-warning btn-lg rounded-0 w-100 m-0 text-light fw-bold"
+                      >
+                        See Project
+                      </button></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card2 rounded-0 border-0">
+                <img src="./d-images/card2.png" class="card-img" alt="..." />
+                <div class="card-img-overlay p-0">
+                  <h5 class="card-title text-light fw-bold display-6 ps-3">
+                    Data Dashboard Healthcare
+                  </h5>
+                  <p class="card-text text-light lead ps-3">
+                    A daily selection of privately personalized reads; no
+                    accounts or sign-ups required. has been the industry's
+                    standard
+                  </p>
+                  <div class="ps-3 mb-4">
+                    <button
+                      class="btn text-light rounded-0 btn-outline-secondary border"
+                    >
+                      html
+                    </button>
+                    <button
+                      class="btn text-light rounded-0 btn-outline-secondary border"
+                    >
+                      bootstrap
+                    </button>
+                    <button
+                      class="btn text-light rounded-0 btn-outline-secondary border"
+                    >
+                      Ruby
+                    </button>
+                  </div>
+                  <a href="#"
+                    ><button
+                      class="buttonc btn btn-warning btn-lg rounded-0 w-100 m-0 text-light fw-bold"
+                    >
+                      See Project
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card rounded-0 border-0">
+                <img src="./d-images/card3.png" class="card-img" alt="..." />
+                <div class="card-img-overlay mt-5 p-0">
+                  <h5 class="card-title text-light fw-bold display-6 ps-3">
+                    Website Protfolio
+                  </h5>
+                  <p class="card-text text-light lead ps-3">
+                    A daily selection of privately personalized reads; no
+                    accounts or sign-ups required. has been the industry's
+                    standard
+                  </p>
+                  <div class="ps-3 mb-4">
+                    <button
+                      class="btn text-light rounded-0 btn-outline-secondary border"
+                    >
+                      html
+                    </button>
+                    <button
+                      class="btn text-light rounded-0 btn-outline-secondary border"
+                    >
+                      bootstrap
+                    </button>
+                    <button
+                      class="btn text-light rounded-0 btn-outline-secondary border"
+                    >
+                      Ruby
+                    </button>
+                  </div>
+                  <a href="#"
+                    ><button
+                      class="buttonc btn btn-warning btn-lg rounded-0 w-100 m-0 text-light fw-bold"
+                    >
+                      See Project
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card rounded-0 border-0">
+                <img src="./d-images/card1.png" class="card-img" alt="..." />
+                <div class="card-img-overlay p-0">
+                  <p class="card-title text-light fw-bold display-6 ps-3">
+                    Profesional Art Printing Data
+                  </p>
+                  <p class="card-text text-light lead ps-3">
+                    A daily selection of privately personalized reads; no
+                    accounts or sign-ups required. has been the industry's
+                    standard
+                  </p>
+                  <div class="ps-3 mb-4">
+                    <button
+                      class="btn text-light rounded-0 btn-outline-secondary border"
+                    >
+                      html
+                    </button>
+                    <button
+                      class="btn text-light rounded-0 btn-outline-secondary border"
+                    >
+                      bootstrap
+                    </button>
+                    <button
+                      class="btn text-light rounded-0 btn-outline-secondary border"
+                    >
+                      Ruby
+                    </button>
+                  </div>
+                  <a href="#"
+                    ><button
+                      class="buttonc btn btn-warning btn-lg rounded-0 w-100 m-0 text-light fw-bold"
+                    >
+                      See Project
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card rounded-0 border-0">
+                <img src="./d-images/card2.png" class="card-img" alt="..." />
+                <div class="card-img-overlay p-0">
+                  <h5 class="card-title text-light fw-bold display-6 ps-3">
+                    Data Dashboard Healthcare
+                  </h5>
+                  <p class="card-text text-light lead ps-3">
+                    A daily selection of privately personalized reads; no
+                    accounts or sign-ups required. has been the industry's
+                    standard
+                  </p>
+                  <div class="ps-3 mb-4">
+                    <button
+                      class="btn text-light rounded-0 btn-outline-secondary border"
+                    >
+                      html
+                    </button>
+                    <button
+                      class="btn text-light rounded-0 btn-outline-secondary border"
+                    >
+                      bootstrap
+                    </button>
+                    <button
+                      class="btn text-light rounded-0 btn-outline-secondary border"
+                    >
+                      Ruby
+                    </button>
+                  </div>
+                  <a href="#"
+                    ><button
+                      class="buttonc btn btn-warning btn-lg rounded-0 w-100 m-0 text-light fw-bold"
+                    >
+                      See Project
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card rounded-0 border-0">
+                <img src="./d-images/card3.png" class="card-img" alt="..." />
+                <div class="card-img-overlay mt-5 p-0">
+                  <h5 class="card-title text-light fw-bold display-6 ps-3">
+                    Website Protfolio
+                  </h5>
+                  <p class="card-text text-light lead ps-3">
+                    A daily selection of privately personalized reads; no
+                    accounts or sign-ups required. has been the industry's
+                    standard
+                  </p>
+                  <div class="ps-3 mb-4">
+                    <button
+                      class="btn text-light rounded-0 btn-outline-secondary border"
+                    >
+                      html
+                    </button>
+                    <button
+                      class="btn text-light rounded-0 btn-outline-secondary border"
+                    >
+                      bootstrap
+                    </button>
+                    <button
+                      class="btn text-light rounded-0 btn-outline-secondary border"
+                    >
+                      Ruby
+                    </button>
+                  </div>
+                  <a href="#"
+                    ><button
+                      class="buttonc btn btn-warning btn-lg rounded-0 w-100 m-0 text-light fw-bold"
+                    >
+                      See Project
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </body>
 </html>
