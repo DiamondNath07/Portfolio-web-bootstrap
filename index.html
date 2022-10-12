@@ -16,6 +16,7 @@
       rel="stylesheet"
       href="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
     />
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
     <title>Portfolio</title>
   </head>
@@ -28,6 +29,26 @@
 
     body {
       overflow-x: hidden;
+    }
+
+    .card-img-overlay {
+      top: 35%;
+    }
+    .card-img-overlay {
+      position: absolute;
+      z-index: 1;
+    }
+    .buttonc {
+      position: absolute;
+      display: none;
+      z-index: 2;
+    }
+    .card:hover .buttonc {
+      display: block;
+    }
+
+    .card-img-overlay .f-btn {
+      margin-top: 65%;
     }
   </style>
   <body>
@@ -188,78 +209,217 @@
             <div class="col">
               <div class="card rounded-0 border-0">
                 <img src="./d-images/kard1.png" class="card-img" alt="..." />
-                <div class="card-img-overlay">
+                <div class="card-img-overlay p-0">
                   <h5 class="card-title d-none">Card title</h5>
                   <p class="card-text d-none">
                     This is a longer card with supporting text below as a
                     natural lead-in to additional content. This content is a
                     little bit longer.
                   </p>
+                  <div class="f-btn">
+                    <a href="#"
+                      ><button
+                        class="buttonc card-btn btn btn-warning btn-lg rounded-0 w-100 m-0 text-light fw-bold"
+                      >
+                        See Project
+                      </button></a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card rounded-0 border-0">
+              <div class="card card2 rounded-0 border-0">
                 <img src="./d-images/card2.png" class="card-img" alt="..." />
-                <div class="card-img-overlay mt-5">
-                  <h5 class="card-title mt-5">Card title</h5>
-                  <p class="card-text mt-5">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
+                <div class="card-img-overlay p-0">
+                  <h5 class="card-title text-light fw-bold display-6 ps-3">
+                    Data Dashboard Healthcare
+                  </h5>
+                  <p class="card-text text-light lead ps-3">
+                    A daily selection of privately personalized reads; no
+                    accounts or sign-ups required. has been the industry's
+                    standard
                   </p>
+                  <div class="ps-3 mb-4">
+                    <button
+                      class="btn text-light rounded-0 btn-outline-secondary border"
+                    >
+                      html
+                    </button>
+                    <button
+                      class="btn text-light rounded-0 btn-outline-secondary border"
+                    >
+                      bootstrap
+                    </button>
+                    <button
+                      class="btn text-light rounded-0 btn-outline-secondary border"
+                    >
+                      Ruby
+                    </button>
+                  </div>
+                  <a href="#"
+                    ><button
+                      class="buttonc btn btn-warning btn-lg rounded-0 w-100 m-0 text-light fw-bold"
+                    >
+                      See Project
+                    </button></a
+                  >
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card rounded-0 border-0">
                 <img src="./d-images/card3.png" class="card-img" alt="..." />
-                <div class="card-img-overlay">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
+                <div class="card-img-overlay mt-5 p-0">
+                  <h5 class="card-title text-light fw-bold display-6 ps-3">
+                    Website Protfolio
+                  </h5>
+                  <p class="card-text text-light lead ps-3">
+                    A daily selection of privately personalized reads; no
+                    accounts or sign-ups required. has been the industry's
+                    standard
                   </p>
+                  <div class="ps-3 mb-4">
+                    <button
+                      class="btn text-light rounded-0 btn-outline-secondary border"
+                    >
+                      html
+                    </button>
+                    <button
+                      class="btn text-light rounded-0 btn-outline-secondary border"
+                    >
+                      bootstrap
+                    </button>
+                    <button
+                      class="btn text-light rounded-0 btn-outline-secondary border"
+                    >
+                      Ruby
+                    </button>
+                  </div>
+                  <a href="#"
+                    ><button
+                      class="buttonc btn btn-warning btn-lg rounded-0 w-100 m-0 text-light fw-bold"
+                    >
+                      See Project
+                    </button></a
+                  >
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card rounded-0 border-0">
                 <img src="./d-images/card1.png" class="card-img" alt="..." />
-                <div class="card-img-overlay">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
+                <div class="card-img-overlay p-0">
+                  <h5 class="card-title text-light fw-bold display-6 ps-3">
+                    Profesional Art Printing Data More
+                  </h5>
+                  <p class="card-text text-light lead ps-3">
+                    A daily selection of privately personalized reads; no
+                    accounts or sign-ups required. has been the industry's
+                    standard
                   </p>
+                  <div class="ps-3 mb-4">
+                    <button
+                      class="btn text-light rounded-0 btn-outline-secondary border"
+                    >
+                      html
+                    </button>
+                    <button
+                      class="btn text-light rounded-0 btn-outline-secondary border"
+                    >
+                      bootstrap
+                    </button>
+                    <button
+                      class="btn text-light rounded-0 btn-outline-secondary border"
+                    >
+                      Ruby
+                    </button>
+                  </div>
+                  <a href="#"
+                    ><button
+                      class="buttonc btn btn-warning btn-lg rounded-0 w-100 m-0 text-light fw-bold"
+                    >
+                      See Project
+                    </button></a
+                  >
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card rounded-0 border-0">
                 <img src="./d-images/card2.png" class="card-img" alt="..." />
-                <div class="card-img-overlay">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
+                <div class="card-img-overlay p-0">
+                  <h5 class="card-title text-light fw-bold display-6 ps-3">
+                    Data Dashboard Healthcare
+                  </h5>
+                  <p class="card-text text-light lead ps-3">
+                    A daily selection of privately personalized reads; no
+                    accounts or sign-ups required. has been the industry's
+                    standard
                   </p>
+                  <div class="ps-3 mb-4">
+                    <button
+                      class="btn text-light rounded-0 btn-outline-secondary border"
+                    >
+                      html
+                    </button>
+                    <button
+                      class="btn text-light rounded-0 btn-outline-secondary border"
+                    >
+                      bootstrap
+                    </button>
+                    <button
+                      class="btn text-light rounded-0 btn-outline-secondary border"
+                    >
+                      Ruby
+                    </button>
+                  </div>
+                  <a href="#"
+                    ><button
+                      class="buttonc btn btn-warning btn-lg rounded-0 w-100 m-0 text-light fw-bold"
+                    >
+                      See Project
+                    </button></a
+                  >
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card rounded-0 border-0">
                 <img src="./d-images/card3.png" class="card-img" alt="..." />
-                <div class="card-img-overlay">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
+                <div class="card-img-overlay mt-5 p-0">
+                  <h5 class="card-title text-light fw-bold display-6 ps-3">
+                    Website Protfolio
+                  </h5>
+                  <p class="card-text text-light lead ps-3">
+                    A daily selection of privately personalized reads; no
+                    accounts or sign-ups required. has been the industry's
+                    standard
                   </p>
+                  <div class="ps-3 mb-4">
+                    <button
+                      class="btn text-light rounded-0 btn-outline-secondary border"
+                    >
+                      html
+                    </button>
+                    <button
+                      class="btn text-light rounded-0 btn-outline-secondary border"
+                    >
+                      bootstrap
+                    </button>
+                    <button
+                      class="btn text-light rounded-0 btn-outline-secondary border"
+                    >
+                      Ruby
+                    </button>
+                  </div>
+                  <a href="#"
+                    ><button
+                      class="buttonc btn btn-warning btn-lg rounded-0 w-100 m-0 text-light fw-bold"
+                    >
+                      See Project
+                    </button></a
+                  >
                 </div>
               </div>
             </div>
