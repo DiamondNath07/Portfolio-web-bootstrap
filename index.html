@@ -30,6 +30,12 @@
     body {
       overflow-x: hidden;
     }
+    .card {
+      transition: all 0.3s ease-in;
+    }
+    .card:hover {
+      transform: scale(1.1);
+    }
 
     .card-img-overlay {
       top: 17%;
@@ -42,6 +48,7 @@
       position: absolute;
       display: none;
       z-index: 2;
+      transition: transform 1s ease-in;
     }
     .card:hover .buttonc {
       display: block;
@@ -310,8 +317,8 @@
               <div class="card rounded-0 border-0">
                 <img src="./d-images/card1.png" class="card-img" alt="..." />
                 <div class="card-img-overlay p-0">
-                  <p class="card-title text-light fw-bold  display-6 ps-3">
-                    Profesional Art Printing Data  
+                  <p class="card-title text-light fw-bold display-6 ps-3">
+                    Profesional Art Printing Data
                   </p>
                   <p class="card-text text-light lead ps-3">
                     A daily selection of privately personalized reads; no
